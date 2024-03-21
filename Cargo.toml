@@ -1,0 +1,19 @@
+[package]
+name = "wisp2socks"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytes = "1.5.0"
+clap = { version = "4.5.3", features = ["cargo", "derive"] }
+fastwebsockets = { version = "0.7.1", features = ["upgrade", "unstable-split"] }
+futures-util = "0.3.30"
+http-body-util = "0.1.1"
+hyper = { version = "1.2.0", features = ["client", "http1"] }
+hyper-util = { version = "0.1.3", features = ["tokio"] }
+socks5-proto = "0.4.0"
+socks5-server = "0.10.0"
+tokio = { version = "1.36.0", features = ["full"] }
+tokio-native-tls = "0.3.1"
+tokio-util = "0.7.10"
+wisp-mux = { version = "2.0.0", features = ["tokio_io", "fastwebsockets"] }
